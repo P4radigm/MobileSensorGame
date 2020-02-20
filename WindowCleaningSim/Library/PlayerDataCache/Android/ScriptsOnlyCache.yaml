@@ -3,12 +3,15 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - LunarConsolePlugin.LunarConsole
     - SensorDebugData
+    - SensorDebugDebug
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
+    - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -38,6 +41,7 @@ ScriptsOnlyBuild:
     Unity.RenderPipelines.Universal.Runtime.dll:
     - UnityEngine.Rendering.Universal.ForwardRendererData
     - UnityEngine.Rendering.Universal.PostProcessData
+    - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     Unity.Rider.Editor.dll:
@@ -89,89 +93,99 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 11532}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 11670}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 11750}
+      Script: {instanceID: 12020}
     - Class: 114
-      Script: {instanceID: 11798}
+      Script: {instanceID: 12070}
     - Class: 114
-      Script: {instanceID: 11940}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 12258}
     - Class: 114
-      Script: {instanceID: 12344}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12658}
     - Class: 114
-      Script: {instanceID: 12572}
+      Script: {instanceID: 12728}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 12928}
+      Script: {instanceID: 12902}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13052}
+      Script: {instanceID: 13290}
     - Class: 114
-      Script: {instanceID: 13162}
+      Script: {instanceID: 13350}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13418}
     - Class: 114
-      Script: {instanceID: 13500}
+      Script: {instanceID: 13550}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 13780}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13886}
     - Class: 114
-      Script: {instanceID: 13884}
+      Script: {instanceID: 13912}
     - Class: 114
-      Script: {instanceID: 13904}
+      Script: {instanceID: 14082}
     - Class: 114
-      Script: {instanceID: 14038}
+      Script: {instanceID: 14144}
     - Class: 114
-      Script: {instanceID: 14066}
+      Script: {instanceID: 14254}
     - Class: 114
-      Script: {instanceID: 14076}
+      Script: {instanceID: 14324}
     - Class: 114
-      Script: {instanceID: 14174}
+      Script: {instanceID: 14346}
     - Class: 114
-      Script: {instanceID: 14418}
+      Script: {instanceID: 14496}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14528}
     - Class: 114
-      Script: {instanceID: 14488}
+      Script: {instanceID: 14538}
     - Class: 114
-      Script: {instanceID: 14736}
+      Script: {instanceID: 14638}
     - Class: 114
-      Script: {instanceID: 14934}
+      Script: {instanceID: 14714}
     - Class: 114
-      Script: {instanceID: 14980}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 15196}
+      Script: {instanceID: 14910}
     - Class: 114
-      Script: {instanceID: 15200}
+      Script: {instanceID: 14968}
     - Class: 114
-      Script: {instanceID: 15232}
+      Script: {instanceID: 14988}
     - Class: 114
-      Script: {instanceID: 15262}
+      Script: {instanceID: 15242}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15452}
     - Class: 114
-      Script: {instanceID: 15396}
+      Script: {instanceID: 15504}
     - Class: 114
-      Script: {instanceID: 15402}
+      Script: {instanceID: 15738}
     - Class: 114
-      Script: {instanceID: 17816}
+      Script: {instanceID: 15744}
+    - Class: 114
+      Script: {instanceID: 15776}
+    - Class: 114
+      Script: {instanceID: 15806}
+    - Class: 114
+      Script: {instanceID: 15810}
+    - Class: 114
+      Script: {instanceID: 15954}
+    - Class: 114
+      Script: {instanceID: 15960}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -545,6 +559,12 @@ ScriptsOnlyBuild:
     className: FilmGrain
   - hash:
       serializedVersion: 2
+      Hash: 227a3d8968bb3326cf22f13f6db35640
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: LunarConsolePluginInternal
+    className: LunarConsoleAction
+  - hash:
+      serializedVersion: 2
       Hash: e3a9d5756f1162dd7720942841561275
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
@@ -567,6 +587,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: dd07b17038ebcad27f14e517325207c9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: LunarConsolePluginInternal
+    className: LunarConsoleLegacyActions
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -639,6 +665,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 18595cc976c71c17a84fa726a8f03986
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: LunarConsolePlugin
+    className: LunarConsole
   - hash:
       serializedVersion: 2
       Hash: c1f5356fcd27668ddc25078e27f9828d
@@ -929,6 +961,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerValue
   - hash:
       serializedVersion: 2
+      Hash: 3960e5d88ec6f810a8e935af8be47614
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SensorDebugDebug
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Experimental.Rendering.Universal
@@ -1167,25 +1205,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 227a3d8968bb3326cf22f13f6db35640
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: LunarConsolePluginInternal
-    className: LunarConsoleAction
-  - hash:
-      serializedVersion: 2
-      Hash: dd07b17038ebcad27f14e517325207c9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: LunarConsolePluginInternal
-    className: LunarConsoleLegacyActions
-  - hash:
-      serializedVersion: 2
-      Hash: 18595cc976c71c17a84fa726a8f03986
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: LunarConsolePlugin
-    className: LunarConsole
   platform: 13
   scenePathNames:
   - Assets/Scenes/SensorDebug.unity
-  playerPath: C:/Users/leonv/Desktop/WindowCleaningMain/Builds/DebugBuild/DebugBuildConsole.apk
+  playerPath: C:/Users/leonv/Desktop/WindowCleaningMain/Builds/DebugBuild/DebugBuildLeg2.apk

@@ -2,14 +2,14 @@
     "name": "InertialTracking",
     "maps": [
         {
-            "name": "MainScenes",
+            "name": "SensorControls",
             "id": "b948d0d4-4202-4879-9285-6048465d1b00",
             "actions": [
                 {
-                    "name": "Wipe",
-                    "type": "Button",
-                    "id": "1454405b-ba2f-4b6b-b269-2cb330ea6ce8",
-                    "expectedControlType": "",
+                    "name": "Gyroscope",
+                    "type": "Value",
+                    "id": "1c13e508-6db5-4540-bdaa-3e8065831dde",
+                    "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": ""
                 }
@@ -17,12 +17,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "c54d797f-8bfd-44f5-a12e-1ea71b1a7539",
-                    "path": "",
+                    "id": "de741778-6962-4e62-a22e-807f5507a097",
+                    "path": "<Gyroscope>/angularVelocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Wipe",
+                    "action": "Gyroscope",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
