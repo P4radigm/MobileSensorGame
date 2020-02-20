@@ -1,0 +1,33 @@
+{
+    "name": "InertialTracking",
+    "maps": [
+        {
+            "name": "MainScenes",
+            "id": "b948d0d4-4202-4879-9285-6048465d1b00",
+            "actions": [
+                {
+                    "name": "Wipe",
+                    "type": "Button",
+                    "id": "1454405b-ba2f-4b6b-b269-2cb330ea6ce8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c54d797f-8bfd-44f5-a12e-1ea71b1a7539",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Wipe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
