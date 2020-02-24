@@ -28,11 +28,6 @@ public class SensorDebugDebug : MonoBehaviour
 
     UnityEngine.Gyroscope m_Gyro;
     Compass m_Compass;
-    
-    private void Awake()
-    {
-
-    }
 
     // Start is called before the first frame update
     void Start()
