@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -526,6 +526,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScrewInteractable
       objectReference: {fileID: 0}
+    - target: {fileID: 5963765777588220673, guid: 339eeb2e18f13624995193b238ee4c75,
+        type: 3}
+      propertyPath: gravityMeasure
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 8187754383507880350, guid: 339eeb2e18f13624995193b238ee4c75,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -534,7 +539,7 @@ PrefabInstance:
     - target: {fileID: 8187754383507880350, guid: 339eeb2e18f13624995193b238ee4c75,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3234
+      value: 0.325
       objectReference: {fileID: 0}
     - target: {fileID: 8187754383507880350, guid: 339eeb2e18f13624995193b238ee4c75,
         type: 3}

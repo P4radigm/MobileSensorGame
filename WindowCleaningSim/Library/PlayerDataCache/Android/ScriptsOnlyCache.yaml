@@ -1,17 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - LunarConsolePlugin.LunarConsole
-    - SensorDebugData
-    - SensorDebugDebug
+    - ScrewInteractable
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
-    - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
-    - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -43,7 +39,6 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.PostProcessData
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
-    - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -57,8 +52,6 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -73,7 +66,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/SensorDebug.unity:
+    Assets/Scenes/Level1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -82,9 +75,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -119,10 +122,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12728}
     - Class: 114
-      Script: {instanceID: 12742}
-    - Class: 114
-      Script: {instanceID: 12902}
-    - Class: 114
       Script: {instanceID: 13036}
     - Class: 114
       Script: {instanceID: 13290}
@@ -133,15 +132,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13550}
     - Class: 114
-      Script: {instanceID: 13780}
-    - Class: 114
       Script: {instanceID: 13886}
     - Class: 114
       Script: {instanceID: 13912}
     - Class: 114
       Script: {instanceID: 14082}
-    - Class: 114
-      Script: {instanceID: 14144}
     - Class: 114
       Script: {instanceID: 14254}
     - Class: 114
@@ -155,17 +150,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14538}
     - Class: 114
-      Script: {instanceID: 14638}
-    - Class: 114
-      Script: {instanceID: 14714}
-    - Class: 114
       Script: {instanceID: 14892}
     - Class: 114
       Script: {instanceID: 14910}
     - Class: 114
       Script: {instanceID: 14968}
-    - Class: 114
-      Script: {instanceID: 14988}
     - Class: 114
       Script: {instanceID: 15242}
     - Class: 114
@@ -177,8 +166,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15744}
     - Class: 114
-      Script: {instanceID: 15776}
-    - Class: 114
       Script: {instanceID: 15806}
     - Class: 114
       Script: {instanceID: 15810}
@@ -186,6 +173,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15954}
     - Class: 114
       Script: {instanceID: 15960}
+    - Class: 114
+      Script: {instanceID: 20528}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1205,7 +1194,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a0dc186639ba2d8f2ca792552f463e4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrewInteractable
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SensorDebug.unity
-  playerPath: C:/Users/leonv/Desktop/WindowCleaningMain/Builds/DebugBuild/DebugBuildLeg2.apk
+  - Assets/Scenes/Level1.unity
+  playerPath: C:/Users/leonv/Desktop/WindowCleaningMain/Builds/DebugBuild/GPtest1.apk
