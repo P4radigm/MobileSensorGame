@@ -1,13 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - LevelManager
+    - LunarConsolePlugin.LunarConsole
+    - NailInteractable
+    - NailStart
     - ScrewInteractable
+    - SensorDebugDebug
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
+    - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
+    - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -52,6 +59,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -124,57 +133,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 13292}
     - Class: 114
-      Script: {instanceID: 13350}
+      Script: {instanceID: 13352}
     - Class: 114
-      Script: {instanceID: 13418}
+      Script: {instanceID: 13420}
     - Class: 114
-      Script: {instanceID: 13550}
+      Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 13886}
+      Script: {instanceID: 13888}
     - Class: 114
-      Script: {instanceID: 13912}
+      Script: {instanceID: 13914}
     - Class: 114
-      Script: {instanceID: 14082}
+      Script: {instanceID: 14086}
     - Class: 114
-      Script: {instanceID: 14254}
+      Script: {instanceID: 14258}
     - Class: 114
-      Script: {instanceID: 14324}
+      Script: {instanceID: 14260}
     - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14496}
+      Script: {instanceID: 14352}
     - Class: 114
-      Script: {instanceID: 14528}
+      Script: {instanceID: 14502}
     - Class: 114
-      Script: {instanceID: 14538}
+      Script: {instanceID: 14534}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 14544}
     - Class: 114
-      Script: {instanceID: 14910}
+      Script: {instanceID: 14884}
     - Class: 114
-      Script: {instanceID: 14968}
+      Script: {instanceID: 14898}
     - Class: 114
-      Script: {instanceID: 15242}
+      Script: {instanceID: 14916}
     - Class: 114
-      Script: {instanceID: 15452}
+      Script: {instanceID: 14974}
     - Class: 114
-      Script: {instanceID: 15504}
+      Script: {instanceID: 15248}
     - Class: 114
-      Script: {instanceID: 15738}
+      Script: {instanceID: 15458}
+    - Class: 114
+      Script: {instanceID: 15510}
     - Class: 114
       Script: {instanceID: 15744}
     - Class: 114
-      Script: {instanceID: 15806}
+      Script: {instanceID: 15750}
     - Class: 114
-      Script: {instanceID: 15810}
+      Script: {instanceID: 15812}
     - Class: 114
-      Script: {instanceID: 15954}
+      Script: {instanceID: 15816}
     - Class: 114
       Script: {instanceID: 15960}
     - Class: 114
-      Script: {instanceID: 20528}
+      Script: {instanceID: 15966}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -184,6 +195,110 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Level2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 12608}
+    - Class: 114
+      Script: {instanceID: 13288}
+    - Class: 114
+      Script: {instanceID: 14054}
+    - Class: 114
+      Script: {instanceID: 14884}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/SensorDebug.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11540}
+    - Class: 114
+      Script: {instanceID: 11926}
+    - Class: 114
+      Script: {instanceID: 12020}
+    - Class: 114
+      Script: {instanceID: 12608}
+    - Class: 114
+      Script: {instanceID: 12742}
+    - Class: 114
+      Script: {instanceID: 12902}
+    - Class: 114
+      Script: {instanceID: 13782}
+    - Class: 114
+      Script: {instanceID: 14148}
+    - Class: 114
+      Script: {instanceID: 14718}
+    - Class: 114
+      Script: {instanceID: 14884}
+    - Class: 114
+      Script: {instanceID: 14916}
+    - Class: 114
+      Script: {instanceID: 14994}
+    - Class: 114
+      Script: {instanceID: 15782}
+    - Class: 114
+      Script: {instanceID: 20482}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -596,6 +711,12 @@ ScriptsOnlyBuild:
     className: PlayerInputEditor
   - hash:
       serializedVersion: 2
+      Hash: 5290dab40c95ec67cc1e5403473167e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NailInteractable
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -740,6 +861,12 @@ ScriptsOnlyBuild:
     className: OnScreenButton
   - hash:
       serializedVersion: 2
+      Hash: 48e596e7308415bb893e30ee8837efcb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NailStart
+  - hash:
+      serializedVersion: 2
       Hash: f050e4ebd311386367bb1906f9218b01
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -768,6 +895,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: MotionBlur
+  - hash:
+      serializedVersion: 2
+      Hash: b2d393f86a4162d1cdeb05cd6ece4749
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrewInteractable
   - hash:
       serializedVersion: 2
       Hash: 36025d42bf23fda83a55bf1429201821
@@ -890,12 +1023,6 @@ ScriptsOnlyBuild:
     className: RenderObjects
   - hash:
       serializedVersion: 2
-      Hash: cc6affa5d61a2883a8be55bd8dda4aaa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SensorDebugData
-  - hash:
-      serializedVersion: 2
       Hash: 58e68364412c67eae2bdb4954be2dcc2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -924,6 +1051,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 877ca5d717d3cff60c7c854b6c3c3015
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelManager
   - hash:
       serializedVersion: 2
       Hash: f69dfc6409fbbd89d3689368e99688a8
@@ -1194,13 +1327,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: a0dc186639ba2d8f2ca792552f463e4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScrewInteractable
   platform: 13
   scenePathNames:
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/leonv/Desktop/WindowCleaningMain/Builds/DebugBuild/GPtest1.apk
+  - Assets/Scenes/Level2.unity
+  - Assets/Scenes/SensorDebug.unity
+  playerPath: C:/Users/leonv/Desktop/WindowCleaningMain/Builds/DebugBuild/GPtest3.apk

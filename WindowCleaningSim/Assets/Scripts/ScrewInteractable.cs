@@ -16,7 +16,7 @@ public class ScrewInteractable : MonoBehaviour
     private bool oneTimeCheck = true;
     private bool backBool = true;
 
-    UnityEngine.Gyroscope m_Gyro;
+    private UnityEngine.Gyroscope m_Gyro;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class ScrewInteractable : MonoBehaviour
         yEnd = yStart - 0.3f;
         m_Gyro = Input.gyro;
         m_Gyro.enabled = true;
-        m_Gyro.updateInterval = 0.1f;
+        m_Gyro.updateInterval = 0.02f;
     }
 
     // Update is called once per frame
@@ -44,10 +44,11 @@ public class ScrewInteractable : MonoBehaviour
 
         if (SystemInfo.supportsGyroscope)
         {
-            if (Mathf.Round(m_Gyro.gravity.y * 100) / 100 > gravityMeasure)
-            {
-               rotateAngle += m_Gyro.rotationRateUnbiased.y;
-            }
+            //if (Mathf.Round(m_Gyro.gravity.y * 100) / 100 > gravityMeasure || Mathf.Round(m_Gyro.gravity.y * 100) / 100 < -gravityMeasure)
+            //{
+
+            //}
+            rotateAngle += m_Gyro.rotationRateUnbiased.y;
             transform.rotation = Quaternion.AngleAxis(rotateAngle, Vector3.up);
             transform.position = new Vector3(startTransform.position.x, Mathf.Lerp(yStart, yEnd, rotateAngle / (-360 * turnsNeeded)), startTransform.position.z);
         }
